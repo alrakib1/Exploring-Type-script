@@ -6,7 +6,24 @@ let level;
 function render(document) {
     console.log(document);
 }
-let numbers = [1, 2, 3];
-const strings = numbers.forEach(n => n.toString());
-console.log(strings);
-//# sourceMappingURL=index.js.map
+let user = [1, 'Rakib'];
+const split = user[1].split('a');
+console.log(split);
+const number2 = [1, 2, 3];
+console.log(number2);
+const person = {
+    name: 'Rakib',
+    age: 23,
+    isDev: true
+};
+console.log(person);
+person.name = "Hamid",
+    person.age = 25;
+person.isDev = false;
+console.log(person);
+const secondPerson = "rakib";
+console.log(secondPerson);
+function multiply(a, b) {
+    return a * b;
+}
+console.log(multiply(4, 4));
