@@ -9,19 +9,18 @@ function render(document) {
 // for array
 // let numbers:number[] = [1,2,3]
 // numbers.forEach(n=>n)
-let user = [1, 'Rakib'];
-const split = user[1].split('a');
+let user = [1, "Rakib"];
+const split = user[1].split("a");
 // console.log(split)
 const number2 = [1, 2, 3];
 // console.log(number2)
 const person = {
-    name: 'Rakib',
+    name: "Rakib",
     age: 23,
-    isDev: true
+    isDev: true,
 };
 // console.log(person)
-person.name = "Hamid",
-    person.age = 25;
+(person.name = "Hamid"), (person.age = 25);
 person.isDev = false;
 // console.log(person)
 const secondPerson = "Rakib";
@@ -29,9 +28,9 @@ const secondPerson = "Rakib";
 function multiply(a, b) {
     return a * b;
 }
-// console.log(multiply(4,4)) 
-let fruits = ['apple', 'mango'];
-fruits.push('berry', "pineapple");
+// console.log(multiply(4,4))
+let fruits = ["apple", "mango"];
+fruits.push("berry", "pineapple");
 fruits.pop();
 const index = fruits.indexOf("apple");
 // console.log(fruits)
@@ -42,12 +41,12 @@ a = "Rakib";
 let b;
 b = 4;
 let c = []; //union
-c.push('rakib', 25);
+c.push("rakib", 25);
 let d;
 d = {
     name: "rakib",
     age: 23,
-    ts: true
+    ts: true,
 };
 // console.log(d)
 // any type (not recommended to use for most case)
@@ -61,5 +60,28 @@ const myFunc = (a, b, c = "sakib") => {
     return a + b;
 };
 // if c is optional argument then we simply have to add ? after it. if we assign a default value then we don't need it.
-myFunc('rakib', 'habib');
-// void and undefined are not same thing.
+myFunc("rakib", "habib");
+const userDetails = (id, user) => {
+    console.log(`user id is ${id}, name is ${user.name} and age is ${user.age}`);
+};
+const sayHello = (user) => {
+    console.log(`Hello ${user.age > 50 ? "Sir" : "Mir"} ${user.name}`);
+};
+userDetails(12, { name: "rakib", age: 23 });
+// function signature
+let signatureFunc;
+signatureFunc = (x, y) => {
+    return x * y;
+};
+signatureFunc(2, 5);
+//  can't change property inside of object.
+let calculation;
+calculation = (x, y, z) => {
+    if (z === "add") {
+        return x + y;
+    }
+    else {
+        return x - y;
+    }
+};
+console.log(calculation(2, 3, "add"));
