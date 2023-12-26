@@ -28,9 +28,10 @@ function multiply(a, b) {
 }
 console.log(multiply(4, 4));
 let fruits = ['apple', 'mango'];
-fruits.push('fruits');
+fruits.push('berry', "pineapple");
+fruits.pop();
 const index = fruits.indexOf("apple");
-console.log(index);
+console.log(fruits);
 console.log(Array.isArray(fruits));
 let a;
 a = "Rakib";
