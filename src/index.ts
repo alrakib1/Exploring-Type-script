@@ -33,11 +33,48 @@ person.isDev = false;
 
 console.log(person)
 
-const  secondPerson = "rakib";
+const  secondPerson = "Rakib";
 console.log(secondPerson)
 
 function multiply(a : number, b : number){
-    return a *b;
+    return a * b;
 }
 
 console.log(multiply(4,4)) 
+
+let fruits = ['apple','mango']
+
+fruits.push('fruits')
+
+const index = fruits.indexOf("apple")
+console.log(index)
+console.log(Array.isArray(fruits))
+
+
+let a : string;
+
+a = "Rakib";
+
+let b: number;
+
+b=4;
+
+let c : (string | number)[] = [];
+c.push('rakib',25)
+
+let d :{
+    name: string,
+    age : number,
+    ts : boolean,
+}
+
+d = {
+    name:"rakib",
+    age: 23,
+    ts:true
+}
+
+
+console.log(d)
+
+

@@ -21,9 +21,27 @@ person.name = "Hamid",
     person.age = 25;
 person.isDev = false;
 console.log(person);
-const secondPerson = "rakib";
+const secondPerson = "Rakib";
 console.log(secondPerson);
 function multiply(a, b) {
     return a * b;
 }
 console.log(multiply(4, 4));
+let fruits = ['apple', 'mango'];
+fruits.push('fruits');
+const index = fruits.indexOf("apple");
+console.log(index);
+console.log(Array.isArray(fruits));
+let a;
+a = "Rakib";
+let b;
+b = 4;
+let c = [];
+c.push('rakib', 25);
+let d;
+d = {
+    name: "rakib",
+    age: 23,
+    ts: true
+};
+console.log(d);
