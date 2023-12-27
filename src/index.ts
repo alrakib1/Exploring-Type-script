@@ -131,24 +131,50 @@ userDetails(12, { name: "rakib", age: 23 });
 
 let signatureFunc: (x: number, y: number) => number;
 
-signatureFunc = (x,y)=>{
+signatureFunc = (x, y) => {
   return x * y;
-}
+};
 
-signatureFunc(2,5)
+signatureFunc(2, 5);
 
 //  can't change property inside of object.
 
-let calculation : (x:number, y: number, c:string) =>number;
+let calculation: (x: number, y: number, c: string) => number;
 
-calculation = (x,y, z)=>{
-if(z=== "add"){
-    return x+y;
-  }else{
-return x-y;
+calculation = (x, y, z) => {
+  if (z === "add") {
+    return x + y;
+  } else {
+    return x - y;
+  }
+};
+
+console.log(calculation(2, 3, "add"));
+
+
+// class
+
+class Player {
+  name: string;
+  age: number;
+  country: string;
+  constructor(n: string, a: number, c: string) {
+    this.name = n;
+    this.age = a;
+    this.country = c;
+  }
+
+  play() {
+    console.log(`${this.name}from ${this.country} is playing`);
   }
 }
 
 
-console.log(calculation(2,3,"add"))
+const sakib = new Player('sakib', 34, "bangladesh")
+const musta = new Player("musta", 28, 'bangladesh')
 
+
+
+const players: Player[] = [];
+
+players.push(musta)
