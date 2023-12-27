@@ -86,17 +86,33 @@ calculation = (x, y, z) => {
 };
 console.log(calculation(2, 3, "add"));
 // class
+// class Player {
+//  private name: string;   //can not access from outside
+//  public age: number;   //by default it's public
+// readonly  country: string;   // can not change but read it
+//   constructor(n: string, a: number, c: string) {
+//     this.name = n;
+//     this.age = a;
+//     this.country = c;
+//   }
+//   play() {
+//     console.log(`${this.name}from ${this.country} is playing`);
+//   }
+// }
+//shortcut for explicit purpose
 class Player {
-    constructor(n, a, c) {
-        this.name = n;
-        this.age = a;
-        this.country = c;
+    constructor(name, age, country) {
+        this.name = name;
+        this.age = age;
+        this.country = country;
     }
     play() {
         console.log(`${this.name}from ${this.country} is playing`);
     }
 }
-const sakib = new Player('sakib', 34, "bangladesh");
-const musta = new Player("musta", 28, 'bangladesh');
+const sakib = new Player("sakib", 34, "bangladesh");
+const musta = new Player("musta", 28, "bangladesh");
 const players = [];
 players.push(musta);
+console.log(players);
+// access modifiers
