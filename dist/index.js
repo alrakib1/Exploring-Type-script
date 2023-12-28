@@ -1,4 +1,6 @@
-"use strict";
+import { Player } from './classes/Player.js';
+
+
 let sales = 123545455;
 let course = "TypeScript";
 let is_published = true;
@@ -99,20 +101,8 @@ console.log(calculation(2, 3, "add"));
 //     console.log(`${this.name}from ${this.country} is playing`);
 //   }
 // }
-//shortcut for explicit purpose
-class Player {
-    constructor(name, age, country) {
-        this.name = name;
-        this.age = age;
-        this.country = country;
-    }
-    play() {
-        console.log(`${this.name}from ${this.country} is playing`);
-    }
-}
 const sakib = new Player("sakib", 34, "bangladesh");
 const musta = new Player("musta", 28, "bangladesh");
 const players = [];
 players.push(musta);
 console.log(players);
-// access modifiers

@@ -1,3 +1,9 @@
+import {Player} from './classes/Player.js'
+
+
+
+
+
 let sales: number = 123_545_455;
 let course: string = "TypeScript";
 let is_published: boolean = true;
@@ -169,18 +175,7 @@ console.log(calculation(2, 3, "add"));
 // }
 
 
- //shortcut for explicit purpose
-class Player {
-  constructor(
-    private name: string,
-    public age: number,
-    readonly country: string
-  ) {}  
 
-  play() {
-    console.log(`${this.name}from ${this.country} is playing`);
-  }
-}
 
 const sakib = new Player("sakib", 34, "bangladesh");
 const musta = new Player("musta", 28, "bangladesh");
@@ -190,5 +185,3 @@ const players: Player[] = [];
 players.push(musta);
 
 console.log(players)
-
-// access modifiers
